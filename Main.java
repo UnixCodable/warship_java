@@ -230,7 +230,7 @@ class Game{
                 return ;
             }
             System.out.printf(POS + "     ", 3, 68);
-            if (move_parser(pos, input) == false || pos.x < 0 || pos.x >= 10 || pos.y > 10)
+            if (input.length() == 0 || input.length() == 1 || move_parser(pos, input) == false || pos.x < 0 || pos.x >= 10 || pos.y > 10)
             {
                 System.out.printf(POS + "WRONG MOVEMENT, RETRY", 5, 48);
                 continue ;
